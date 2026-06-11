@@ -1,10 +1,14 @@
 # Assessing Peruvian Poverty from Satellite Imagery
 
+This repository contains the official implementation of the research project: **Assessing Peruvian Poverty from Satellite Imagery**.
+
+This project investigates the use of Vision Transformers (ViT) for predicting the wealth index of Peruvian households by integrating socioeconomic data from the Encuesta Nacional de Hogares del Perú (ENAHO) with Sentinel-2 satellite images, constructing a novel dataset (ENAHO-S2) covering over 5,000 geographically referenced household clusters.
+
 ## Requirements
 
 ### Data
 
-#### Peruvian Household Survey (ENAHO)
+#### Encuesta Nacional de Hogares del Perú (ENAHO)
 
 Follow these steps to download the housing and household characteristics of a specific year:
 
