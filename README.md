@@ -56,5 +56,19 @@ To evaluate the trained model on the validation set and compute the coefficient 
 python eval.py --model-file checkpoints/best_model.pth --batch-size 32
 ```
 
+## Results
+
+By replacing the classification head of a pre-trained ViT-B/16 model with a regression layer, our model achieves the following performance predicting the continuous wealth index:
+
+Model | Target Variable | Validation R² Score |
+|-------|-----------------|---------------------|
+| ViT-B/16 (ImageNet-1K pre-trained) | Cluster-level Wealth Index | 0.7352 |
+
+<p align="center">
+  <img src="assets/val.png" alt="Actual vs. Predicted Wealth Index" width="700">
+</p>
+
+The predictions closely follow a linear trend, demonstrating the model's effectiveness in capturing spatial and structural patterns correlated with socioeconomic status
+
 [inei-microdatos]: https://proyectos.inei.gob.pe/microdatos/
 [conda]: https://docs.conda.io
