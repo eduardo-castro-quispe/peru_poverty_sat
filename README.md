@@ -48,5 +48,13 @@ python train.py --batch-size 32 --epochs 50 --lr 1e-4
 
 **Hardware note:** The original training was performed on an NVIDIA L40S GPU using the Lightning AI platform.
 
+## Evaluation
+
+To evaluate the trained model on the validation set and compute the coefficient of determination, run:
+
+```py
+python eval.py --model-file checkpoints/best_model.pth --batch-size 32
+```
+
 [inei-microdatos]: https://proyectos.inei.gob.pe/microdatos/
 [conda]: https://docs.conda.io
