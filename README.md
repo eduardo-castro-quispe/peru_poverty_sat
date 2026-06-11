@@ -38,5 +38,15 @@ Run the following command to create an environment with the required dependencie
 conda env create --file environment.yml
 ```
 
+## Training
+
+To train the ViT-B/16 model from scratch using the ENAHO-S2 dataset, run the following command. The default configuration uses an Adam optimizer, a batch size of 32, and trains for 50 epochs:
+
+```py
+python train.py --batch-size 32 --epochs 50 --lr 1e-4
+```
+
+**Hardware note:** The original training was performed on an NVIDIA L40S GPU using the Lightning AI platform.
+
 [inei-microdatos]: https://proyectos.inei.gob.pe/microdatos/
 [conda]: https://docs.conda.io
